@@ -6,22 +6,33 @@
     <title>Nezha AIT EL HAD - Portfolio</title>
     <meta name="description" content="Data Analyst, Web Developer & AI Enthusiast - Professional Portfolio" />
     <meta name="author" content="Nezha AIT EL HAD" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/x-icon" href="/nezha-ai-folio/favicon.png" />
+  
+   
 
     <meta property="og:title" content="nezha-ai-folio" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme');
+         if (theme === 'dark') {
+           document.documentElement.classList.add('dark');
+         } else {
+           // Forcer le mode clair par défaut (aucune classe 'dark')
+           document.documentElement.classList.remove('dark');
+         }
+        } catch(e) {
+            // En cas d'erreur, forcer aussi le mode clair
+           document.documentElement.classList.remove('dark');
+          }
+      })();
+    </script>
+  
+    <script type="module" crossorigin src="/nezha-ai-folio/assets/index-B-hWWTGC.js"></script>
+    <link rel="stylesheet" crossorigin href="/nezha-ai-folio/assets/index-Bb5_X8mQ.css">
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
