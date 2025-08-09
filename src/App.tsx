@@ -9,6 +9,7 @@ import AllProjects from './pages/AllProjects';
 import ProjectDetails from './pages/ProjectDetails';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import {AIAssistant} from "./components/AIAssistant";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/AIAssistant" element={<AIAssistant/>}/>
           <Route path="/all-projects" element={<AllProjects />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
         </Routes>
