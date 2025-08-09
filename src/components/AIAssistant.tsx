@@ -8,7 +8,7 @@ const AIAssistant = () => {
   useEffect(() => {
     // Initialize the N8N chat with your webhook URL
     const chat = createChat({
-      webhookUrl: 'https://nerabin.app.n8n.cloud/webhook/cc79b15a-b04f-4429-8194-44c560a25e59/chat',
+      webhookUrl: 'https://noraa.app.n8n.cloud/webhook/cb98ee4b-034e-4ac7-8522-88b7bf10451c/chat',
       target: '#n8n-chat',
       mode: 'window',
       showWelcomeScreen: false,
