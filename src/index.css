@@ -1,0 +1,229 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Microsoft-inspired portfolio colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+
+    /* Microsoft Blue as primary */
+    --primary: 208 100% 42%;  /* #0078D4 */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 208 100% 60%;
+
+    --secondary: 0 0% 95%;    /* #F3F3F3 */
+    --secondary-foreground: 0 0% 17%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 208 100% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 208 100% 42%;
+
+    /* Design system tokens */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 4px 16px -4px hsl(0 0% 0% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* N8N Chat customization to match portfolio theme */
+    --chat--color-primary: #0078D4;
+    --chat--color-primary-shade-50: #106ebe;
+    --chat--color-primary-shade-100: #1a5ea8;
+    --chat--color-secondary: #0078D4;
+    --chat--color-secondary-shade-50: #106ebe;
+    --chat--color-white: #ffffff;
+    --chat--color-light: #f3f3f3;
+    --chat--color-light-shade-50: #e6e6e6;
+    --chat--color-light-shade-100: #d9d9d9;
+    --chat--color-medium: #d2d4d9;
+    --chat--color-dark: #2b2b2b;
+    --chat--color-disabled: #777980;
+    --chat--color-typing: #404040;
+
+    --chat--spacing: 1rem;
+    --chat--border-radius: 0.75rem;
+    --chat--transition-duration: 0.3s;
+
+    --chat--window--width: 400px;
+    --chat--window--height: 600px;
+
+    --chat--header-height: auto;
+    --chat--header--padding: var(--chat--spacing);
+    --chat--header--background: var(--chat--color-primary);
+    --chat--header--color: var(--chat--color-white);
+    --chat--header--border-top: none;
+    --chat--header--border-bottom: none;
+    --chat--heading--font-size: 1.5em;
+    --chat--subtitle--font-size: 0.9rem;
+    --chat--subtitle--line-height: 1.6;
+
+    --chat--textarea--height: 50px;
+
+    --chat--message--font-size: 0.95rem;
+    --chat--message--padding: var(--chat--spacing);
+    --chat--message--border-radius: var(--chat--border-radius);
+    --chat--message-line-height: 1.6;
+    --chat--message--bot--background: var(--chat--color-light);
+    --chat--message--bot--color: var(--chat--color-dark);
+    --chat--message--bot--border: none;
+    --chat--message--user--background: var(--chat--color-primary);
+    --chat--message--user--color: var(--chat--color-white);
+    --chat--message--user--border: none;
+    --chat--message--pre--background: rgba(0, 0, 0, 0.05);
+
+    --chat--toggle--background: var(--chat--color-primary);
+    --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+    --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+    --chat--toggle--color: var(--chat--color-white);
+    --chat--toggle--size: 64px;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  /* Hero button variants */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg;
+    @apply hover:shadow-[var(--shadow-glow)] transform hover:scale-105;
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium;
+    @apply hover:bg-primary hover:text-primary-foreground;
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  /* Card styles */
+  .card-elegant {
+    @apply bg-card border border-border rounded-xl p-6;
+    @apply shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-elegant)];
+    @apply transition-all duration-300 ease-out hover:translate-y-[-4px];
+  }
+  
+  /* Section spacing */
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+  
+  /* Typewriter animation */
+  .typewriter {
+    @apply border-r-2 border-primary-foreground;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: hsl(var(--primary-foreground)); }
+  }
+  
+  /* Floating animation for AI assistant */
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Scroll reveal animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

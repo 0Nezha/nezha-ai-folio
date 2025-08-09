@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nezha AIT EL HAD - Portfolio</title>
+    <meta name="description" content="Data Analyst, Web Developer & AI Enthusiast - Professional Portfolio" />
+    <meta name="author" content="Nezha AIT EL HAD" />
+     <link rel="icon" type="image/x-icon" href="/nezha-ai-folio/favicon.png" />
+  
+   
+
+    <meta property="og:title" content="nezha-ai-folio" />
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme');
+         if (theme === 'dark') {
+           document.documentElement.classList.add('dark');
+         } else {
+           // Forcer le mode clair par défaut (aucune classe 'dark')
+           document.documentElement.classList.remove('dark');
+         }
+        } catch(e) {
+            // En cas d'erreur, forcer aussi le mode clair
+           document.documentElement.classList.remove('dark');
+          }
+      })();
+    </script>
+  
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
