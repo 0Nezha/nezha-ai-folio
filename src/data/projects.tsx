@@ -18,7 +18,7 @@ export const projects = [
       title: 'Medical Management App',
       description: 'PFE Project: A comprehensive web application designed to streamline daily operations in medical cabinets. Features patient management, appointment scheduling, and medical records organization.',
       icon: Laptop,
-      image: '/images/medical.jpg',
+      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tech: ['PHP', 'Xampp','phpMyAdmin' ,'Database', 'React'],
       features: ["Real-time Data", "Interactive Charts", "Export Reports", "Custom Filters"],
       type: 'Médical Project',

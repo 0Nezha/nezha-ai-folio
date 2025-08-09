@@ -24,7 +24,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/nezha-ai-folio">
       <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
