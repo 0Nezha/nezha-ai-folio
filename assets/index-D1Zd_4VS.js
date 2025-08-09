@@ -240,7 +240,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Xt=me,_t=je),ot===void
           
          #n8n-chat .chat-window {
          
-          height: 500px !important;
+          height: 450px !important;
           width: 400px !important;
           
         }
