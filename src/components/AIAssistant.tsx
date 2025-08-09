@@ -78,7 +78,7 @@ const AIAssistant = () => {
           
          #n8n-chat .chat-window {
          
-          height: 500px !important;
+          height: 450px !important;
           width: 400px !important;
           
         }
